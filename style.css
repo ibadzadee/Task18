@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  font-family: "Inconsolata", monospace;
+  font-family: "Lora", serif;
+  font-family: "Martian Mono", monospace;
+}
+* a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0px 64px;
+  margin: auto;
+}
+
+.banner {
+  padding: 100px 0px;
+  background-color: #fffafa;
+}
+.banner .text {
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+.banner .text h1 {
+  color: #fb5849;
+  padding: 0px 40px;
+  position: relative;
+}
+.banner .text h1:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 1.5px;
+  background-color: #fb5849;
+  top: 50%;
+  left: 0;
+}
+.banner .text p {
+  font-size: 20px;
+  font-weight: 900;
+}
+.banner .grid {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  min-height: 400px;
+  gap: 20px;
+}
+.banner .grid div {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-03.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+}
+.banner .grid #price,
+.banner .grid #info {
+  position: absolute;
+  background-color: #fb5849;
+  padding: 30px 20px;
+  font-size: 18px;
+  color: white;
+}
+.banner .grid #price {
+  top: 0;
+  border-radius: 10px;
+}
+.banner .grid #info {
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+}
+.about .about-center {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
+}
+.about .about-center .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.about .about-center .text h4 {
+  color: #fb5849;
+  padding: 0px 40px;
+  position: relative;
+}
+.about .about-center .text h4:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 1.5px;
+  background-color: #fb5849;
+  top: 50%;
+  left: 0;
+}
+.about .about-center .text h1 {
+  font-size: 40px;
+}
+.about .about-center .text p {
+  width: 90%;
+}
+.about .about-center .text p a {
+  color: #007bff;
+}
+.about .about-center .text p a:hover {
+  color: #0659b2;
+}
+.about .about-center .text .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.about .about-center .image {
+  width: 100%;
+  position: relative;
+}
+.about .about-center .image i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: white;
+  background-color: #fb5849;
+  background-size: 0px;
+  border-radius: 9999px;
+  padding: 10px 20px;
+}
+.about .about-center .image i:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.contact {
+  width: 100%;
+  background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/reservation-bg.jpg);
+  padding: 100px 0px;
+}
+.contact .contact-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-center .text {
+  color: white;
+  display: flex;
+  justify-content: xenter;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact .contact-center .text h5 {
+  padding: 0px 40px;
+  position: relative;
+}
+.contact .contact-center .text h5:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 1.5px;
+  background-color: white;
+  top: 50%;
+  left: 0;
+}
+.contact .contact-center .text #p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.contact .contact-center .text #card {
+  gap: 50px;
+}
+.contact .contact-center .text #card .cards {
+  background-color: white;
+  width: 300px;
+  min-height: 100px;
+  border-radius: 10px;
+  color: black;
+}
+.contact .contact-center .text #card .cards i {
+  color: white;
+  padding: 20px 25px;
+  background-color: #fb5849;
+  border-radius: 9999px;
+  position: absolute;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact .contact-center .text #card .cards a {
+  color: black;
+}
+.contact .contact-center .text #card .cards #phone,
+.contact .contact-center .text #card .cards #email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0px;
+  position: relative;
+}
+.contact .contact-center .form {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 60px 40px;
+  border-radius: 20px;
+}
+.contact .contact-center .form .all div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.contact .contact-center .form .all div input,
+.contact .contact-center .form .all div select,
+.contact .contact-center .form .all div button,
+.contact .contact-center .form .all div textarea {
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+}
+.contact .contact-center .form .all div textarea {
+  width: 100%;
+  height: 150px;
+}
+.contact .contact-center .form .all div button {
+  background-color: #fb5849;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.contact .contact-center .form .all div h4 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 0px 32px;
+  }
+  .banner .grid {
+    grid-template-columns: repeat(2, auto);
+  }
+  .banner .grid .display {
+    display: none;
+  }
+  .about .about-center {
+    grid-template-columns: repeat(1, auto);
+  }
+  .about .about-center .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .contact .contact-center .text {
+    padding-bottom: 20px;
+  }
+  .contact .contact-center .text #card {
+    width: 100%;
+  }
+  .contact .contact-center .text #card .cards {
+    width: 100%;
+  }
+  .contact .contact-center .form {
+    padding-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
